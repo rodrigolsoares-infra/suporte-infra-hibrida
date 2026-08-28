@@ -1,0 +1,67 @@
+# ==========================================
+# Windows - Arquivos do Sistema Operacional
+# ==========================================
+[ Tt]humbs.db
+[ Dd]esktop.ini
+$RECYCLE.BIN/
+*.sys
+*.tmp
+*.log
+
+# ==========================================
+# PowerShell & Editores (VS Code / ISE)
+# ==========================================
+# Histórico de comandos e sessões do PowerShell
+.history
+*.ps1xml
+
+# Configurações locais do VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# ==========================================
+# Arquivos de Dados, Chaves e Credenciais
+# ==========================================
+# Arquivos com senhas em texto puro ou exportações de credenciais
+*credential*
+*password*
+*.pfx
+*.p12
+*.pem
+*.key
+*.cer
+
+# Backups de banco de dados do Active Directory e DHCP/DNS
+*.bak
+*.mdf
+*.ldf
+*.edb
+*.chk
+
+# ==========================================
+# Virtualização (Hyper-V / VirtualBox / VMware)
+# ==========================================
+# Impede o envio acidental de discos virtuais gigantescos
+*.vhd
+*.vhdx
+*.vmdk
+*.vdi
+*.iso
+*.ova
+*.ovf
+*.vbox
+*.sav
+*.nvram
+
+# ==========================================
+# Terraform / IaC (Se for utilizar futuramente)
+# ==========================================
+# Arquivos de estado do Terraform que contêm senhas da infraestrutura
+*.tfstate
+*.tfstate.backup
+.terraform/
+*.tfvars
