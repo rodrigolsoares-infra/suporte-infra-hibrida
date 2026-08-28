@@ -30,10 +30,10 @@ Este documento detalha as Group Policy Objects (GPOs) aplicadas no domínio para
 ---
 # ⬇️ **NAVEGAÇÃO:**
 
-↩️ **[Retornar ao Projeto](./README.md)**
+↩️ **[Retornar ao Projeto](.suporte-infra-hibrida/README.md)**
 
-➡️ **[Conferir secção sobre os Scripts](./docs/listar-sripts.md)**
+➡️ **[Conferir secção sobre os Scripts](https://github.com/rodrigolsoares-infra/suporte-infra-hibrida)**
  
-👤 **[Ir para o Portfólio do Meu Perfil](https://github.com/rodrigolsoares-infra/portfolio-suporte-ti)**
+👤 **[Ir para o Portfólio do Meu Perfil](https://github.com/rodrigolsoares-infra/rodrigolsoares-infra)**
  
 ---
