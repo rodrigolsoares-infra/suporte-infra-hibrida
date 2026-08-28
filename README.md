@@ -39,6 +39,7 @@ Abaixo estão os parâmetros essenciais definidos na infraestrutura local e em n
 📷 Evidência: (Insira um print comprovando o ip, dns e domínio local).<br>
 📷 Evidência: (Insira um print comprovando o ip, dns e domínio local).
 </Details>
+
 ### 1.2. Tenant no Microsoft Entra ID (Nuvem)
 * **Tenant ID / Domínio:** `techcorp.onmicrosoft.com`
 * **Domínio Personalizado:** `techcorp.com` (Validado via registro TXT no DNS)
