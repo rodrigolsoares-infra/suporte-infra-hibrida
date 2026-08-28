@@ -157,7 +157,7 @@ A estrutura de GPOs foi desenhada para aplicar o princípio de menor privilégio
 ## 👤 Autor
 **Rodrigo Luiz Soares**
 * **LinkedIn:** [linkedin.com/in/rodrigolzsoares](https://linkedin.com)
-* **Certificações Concluídas/Em Andamento:** Google IT Support | Cisco CCST Networking | Cisco CCST Cybersecurity | AZ-900 Microsoft Azure Fundamentals
+* **Certificações Concluídas/Em Andamento:** Google IT Support | AZ-900 Microsoft Azure Fundamentals | Em preparação Comptia Network+
 ---
 ---
 ⚠️ **NAVEGAÇÃO:**
