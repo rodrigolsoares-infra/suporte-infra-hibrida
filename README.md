@@ -28,7 +28,7 @@ Abaixo estão os parâmetros essenciais definidos na infraestrutura local e em n
 
 | Parâmetro | Configuração Aplicada |
 | :--- | :--- |
-| **FQDN do Domínio** | `techcorp.loca` (com sufixo UPN alternativo `techcorp.com`) |
+| **FQDN do Domínio** | `techcorp.local` (com sufixo UPN alternativo `techcorp.com`) |
 | **NetBIOS** | `TECHCORP` |
 | **Sistema Operacional DC** | Windows Server 2022 Standard |
 | **Serviços Ativos** | AD DS, DNS Server, DHCP Server |
@@ -131,15 +131,15 @@ A estrutura de GPOs foi desenhada para aplicar o princípio de menor privilégio
 * *Modelo de Menor Privilégio (Least Privilege):* Separação entre contas nominais corporativas e contas de administração de serviços.
 
 * *Delegação de Controle (Delegation of Control):* Catribuição e separação de segurança (Modelo AGDL) com aos grupos:  
-	* GG=Grupo Glogal como identidade: `GG_RH_Membros.
-	* DL=Local de Domínio como permissão de recurso: `DL_PastaRH_RW vinculada ao Grupo Global.
+	* `GG=Grupo Glogal` como identidade: `GG_RH_Membros`.
+	* `DL=Domínio Local` como permissão de recurso: `DL_PastaRH_RW` vinculada ao Grupo Global.
 
 ```text
 techcorp.local/
 └── Empresa_TECHCORP/
     ├── Computadores/              # Computadores divisão de infraestrutura
     │   ├── Servers/
-    │   └── Workstations
+    │   └── Workstations/
     ├── Usuarios/                   # OUs dos setores corporativos
     │   ├── TI/                     # Setor de Tecnologia da Informação
     │   ├── RH/                     # Setor de Recursos Humanos
