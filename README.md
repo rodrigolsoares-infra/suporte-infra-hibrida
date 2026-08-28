@@ -50,10 +50,9 @@ Abaixo estão os parâmetros essenciais definidos na infraestrutura local e em n
 
 ---
 ## 2. Topologia e Arquitetura do Ambiente
-
+```plaintext
 [ ON-PREMISES INFRASTRUCTURE ]                       [ MICROSOFT CLOUD SERVICES ]
 Subnet: 192.168.1.0/24                               Tenant: techcorp.onmicrosoft.com
-
 +-------------------------------------+             +---------------------------------+
 |  Windows Server 2022 (Domain Ctrl)  |             |       Microsoft Entra ID        |
 |  Hostname: DC01                     |             |       (Cloud Identity)          |
@@ -77,6 +76,7 @@ Subnet: 192.168.1.0/24                               Tenant: techcorp.onmicrosof
 |  OU: OU=TI,OU=Empresa_TECHCORP      |
 |  User: `rodrigo.soares@techcorp.com`|
 +-------------------------------------+
+```
 
 ![Topologia da Arquitetura Híbrida](./docs/topologia-arquitetura.png)
 
