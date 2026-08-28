@@ -33,11 +33,23 @@ Abaixo estão os parâmetros essenciais definidos na infraestrutura local e em n
 | **Sistema Operacional DC** | Windows Server 2022 Standard |
 | **Serviços Ativos** | AD DS, DNS Server, DHCP Server |
 | **Endereçamento IP (DC)** | `192.168.1.10/24` (Estático) |
+| **Escopo_LAN_Corporativa**| `192.168.10.50`–`.200`(`/24`) (DHCP)|
+| **Opção Escopo `003 Router`**| `192.168.10.1` |
+| **Opção Escopo `006 DNS Servers`**| `192.168.10.10`|
 
 <Details>
-📷 Evidência: (Insira um print comprovando o ip, dns e domínio local).<br>
-📷 Evidência: (Insira um print comprovando o ip, dns e domínio local).<br>
-📷 Evidência: (Insira um print comprovando o ip, dns e domínio local).
+<p align="center">
+  <img src=".github/assets/01-dhcp-scope-active.png" alt="01-dhcp-scope-active.png" width="400"><br>
+  <i>📷 Evidência 1: Configuração do escopo do DHCP ativo.</i><br>
+</p>
+<p align="center">
+  <img src=".github/assets/02-dhcp-concessoes.png" alt="02-dhcp-concessoes.png" width="400"><br>
+  <i>📷 Evidência 2: Concessão do IP ao Cliente CLI-TI-01 cedida pelo DHCP.</i><br>
+</p>
+<p align="center">
+  <img src=".github/assets/03-cliente-ip-dhcp.png" alt="03-cliente-ip-dhcp.png" width="400"><br>
+  <i>Evidência 3: Configurações de rede com IP atribuido pelo DHCP validado na maquina CLI-TI-01.</i>
+</p>
 </Details>
 
 ### 1.2. Tenant no Microsoft Entra ID (Nuvem)
@@ -72,7 +84,7 @@ Subnet: 192.168.1.0/24                               Tenant: techcorp.onmicrosof
                    v
 +-------------------------------------+
 |  Windows 11 Client (Workstation)    |
-|  Hostname: CLI01                    |
+|  Hostname: CLI-TI-01                    |
 |  IP: 192.168.1.50 (DHCP)            |
 |  OU: OU=TI,OU=Empresa_TECHCORP      |
 |  User: `rodrigo.soares@techcorp.com`|
@@ -108,7 +120,7 @@ A estrutura de GPOs foi desenhada para aplicar o princípio de menor privilégio
 * *Ação:* Exigência de comprimento mínimo de 14 caracteres, histórico de 24 senhas e bloqueio automático de conta após 5 tentativas incorretas.
 
 3. `GPO-03: Env_DriveMapping_Dept`
-* *Escopo / Alvo:* `OU=Empresa`
+* *Escopo / Alvo:* `OU=Empresa_CORP`
 * *Ação:* Mapeamento dinâmico da unidade de rede S: apontando para o diretório específico do departamento do usuário logado. 
 
 👉 **[Consulte a Lista Completa de GPOs e Diretivas Aplicadas](./docs/listar-gpos.md)**
@@ -118,9 +130,9 @@ A estrutura de GPOs foi desenhada para aplicar o princípio de menor privilégio
 
 * *Modelo de Menor Privilégio (Least Privilege):* Separação entre contas nominais corporativas e contas de administração de serviços.
 
-* *Delegação de Controle (Delegation of Control):* Configuração do grupo `GRP_Suporte_N1` com permissão exclusiva de reset de senha e desbloqueio de contas na `OU=Usuarios`, sem conceder privilégios de Domain Admin.
-
-* *Administração em Camadas (Tiering Model):* Restrição do uso de contas com privilégios elevados em estações de trabalho comuns.
+* *Delegação de Controle (Delegation of Control):* Catribuição e separação de segurança (Modelo AGDL) com aos grupos:  
+	* GG=Grupo Glogal como identidade: `GG_RH_Membros.
+	* DL=Local de Domínio como permissão de recurso: `DL_PastaRH_RW vinculada ao Grupo Global.
 
 ```text
 techcorp.local/
@@ -146,8 +158,26 @@ techcorp.local/
         ├── GG_TI_ADM     
         └── GG_RH_Membros 
 ```
+
+* *Administração em Camadas (Tiering Model):* Restrição do uso de contas com privilégios elevados em estações de trabalho comuns.
+
+*  *File Server & Compartilhamento de Arquivos:* Criação de diretórios compartilhados `C:\Empresa` com as subpastas para TI, RH, Financeiro e Vendas e configurado para as permissões NTFS com AGDL. 
+
+
 <Details>
 📷 Evidência: (Insira um print do painel com as unidades organizacionais e grupos).
+<p align="center">
+  <img src=".github/assets/04-agdlp-groups-members.png" alt="04-agdlp-groups-members" width="300"><br>
+  <i>📷 Evidência 4: DL_PastaTI_RW vinculada ao Grupo Global GRP_TI_ADM.</i>
+</p>
+<p align="center">
+  <img src=".github/assets/05-ntfs-permissions-ti.png" alt="05-ntfs-permissions-ti" width="300"><br>
+  <i>📷 Evidência 5: Configuração de segurança do diretório C:\Empresa\TI compartilhados.</i>
+</p>
+<p align="center">
+  <img src=".github/assets/06-acesso-negado-cliente.png" alt="06-acesso-negado-cliente" width="300"><br>
+  <i>📷 Evidência 6: Acesso negado ao Cliente ao tentar acessar a Pasta Fianceiro sem permissões.</i>
+</p>
 </Details>
 
 ## 6. Integração Híbrida e Validação (Entra Connect)
@@ -161,7 +191,11 @@ techcorp.local/
 * Nuvem: Confirmação no Portal do Microsoft Entra ID com atributo `Directory synced: Yes` ativo.
 
 <Details>
-📷 Evidência: (Insira um print do portal do Entra ID mostrando os usuários sincronizados).
+📷 Evidência: (Print do portal do Entra ID mostrando os usuários sincronizados).
+<p align="center">
+  <img src=".github/assets/01-hyperv-vswitch.png" alt="vSwitch Criado no Hyper-V" width="700"><br>
+  <i>Figura : Configuração da rede virtual no Hyper-V.</i>
+</p>
 </Details>
 
 ---
