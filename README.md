@@ -121,6 +121,30 @@ A estrutura de GPOs foi desenhada para aplicar o princípio de menor privilégio
 
 * *Administração em Camadas (Tiering Model):* Restrição do uso de contas com privilégios elevados em estações de trabalho comuns.
 
+```text
+techcorp.local/
+└── Empresa_TECHCORP/
+    ├── Computadores/              # Computadores divisão de infraestrutura
+    │   ├── Servers/
+    │   └── Workstations
+    ├── Usuarios/                   # OUs dos setores corporativos
+    │   ├── TI/                     # Setor de Tecnologia da Informação
+    │   ├── RH/                     # Setor de Recursos Humanos
+    │   ├── Financeiro/             # Setor Financeiro
+    │   ├── Diretoria/              # Setor de Executivo
+    │   └── Comercial/              # Setor de Vendas
+    └── Grupos/                     # Grupos de segurança globais e locais
+        ├── DL_PastaComercial_RW
+        ├── DL_PastaDiretoria_RW
+        ├── DL_PastaFinanceiro_RW
+        ├── DL_PastaRH_RW
+        ├── DL_Servidores_FullAccess
+        ├── GG_Comercial_Membros    
+        ├── GG_Diretoria_Membros
+        ├── GG_Financeiro_Membros
+        ├── GG_TI_ADM     
+        └── GG_RH_Membros 
+```
 <Details>
 📷 Evidência: (Insira um print do painel com as unidades organizacionais e grupos).
 </Details>
