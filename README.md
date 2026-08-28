@@ -26,13 +26,14 @@ Este laboratório foi projetado para aplicar na prática os conceitos teóricos 
 Abaixo estão os parâmetros essenciais definidos na infraestrutura local e em nuvem para sustentar o ambiente híbrido de identidades.
 ### 1.1. Active Directory Domain Services (AD DS - Local)
 
-| Parâmetro                  | Configuração Aplicada                                        |
-| :------------------------- | :----------------------------------------------------------- |
-| **FQDN do Domínio**        | `techcorp.local` (com sufixo UPN alternativo `techcorp.com`) |
-| **NetBIOS**                | `TECHCORP`                                                   |
-| **Sistema Operacional DC** | Windows Server 2022 Standard                                 |
-| **Serviços Ativos**        | AD DS, DNS Server, DHCP Server                               |
-| **Endereçamento IP (DC)**  | `192.168.1.10/24` (Estático)                                 |
+| Parâmetro | Configuração Aplicada |
+| :--- | :--- |
+| **FQDN do Domínio** | `techcorp.loca` (com sufixo UPN alternativo `techcorp.com`) |
+| **NetBIOS** | `TECHCORP` |
+| **Sistema Operacional DC** | Windows Server 2022 Standard |
+| **Serviços Ativos** | AD DS, DNS Server, DHCP Server |
+| **Endereçamento IP (DC)** | `192.168.1.10/24` (Estático) |
+
 <Details>
 📷 Evidência: (Insira um print comprovando o ip, dns e domínio local).<br>
 📷 Evidência: (Insira um print comprovando o ip, dns e domínio local).<br>
@@ -50,15 +51,13 @@ Abaixo estão os parâmetros essenciais definidos na infraestrutura local e em n
 ---
 ## 2. Topologia e Arquitetura do Ambiente
 
-[ ON-PREMISES INFRASTRUCTURE ]                     
-[ MICROSOFT CLOUD SERVICES ]
-Subnet: 192.168.1.0/24                              
-Tenant: techcorp.onmicrosoft.com
+[ ON-PREMISES INFRASTRUCTURE ]                       [ MICROSOFT CLOUD SERVICES ]
+Subnet: 192.168.1.0/24                               Tenant: techcorp.onmicrosoft.com
 
 +-------------------------------------+             +---------------------------------+
 |  Windows Server 2022 (Domain Ctrl)  |             |       Microsoft Entra ID        |
-|  Hostname: DC01-SERVER         |             |       (Cloud Identity)          |
-|  IP: 192.168.1.10                   |               |       Domain: techcorp.com      |
+|  Hostname: DC01                     |             |       (Cloud Identity)          |
+|  IP: 192.168.1.10                   |             |       Domain: techcorp.com      |
 |  Roles: AD DS, DNS, DHCP            |             +---------------------------------+
 +-------------------------------------+                              ^
                    |                                                 |
@@ -75,8 +74,8 @@ Tenant: techcorp.onmicrosoft.com
 |  Windows 11 Client (Workstation)    |
 |  Hostname: CLI01                    |
 |  IP: 192.168.1.50 (DHCP)            |
-|  OU: OU=TI,OU=Empresa_TECHCORP   
-|  User: `rodrigo.soares@techcorp.com`
+|  OU: OU=TI,OU=Empresa_TECHCORP      |
+|  User: `rodrigo.soares@techcorp.com`|
 +-------------------------------------+
 
 ![Topologia da Arquitetura Híbrida](./docs/topologia-arquitetura.png)
