@@ -34,6 +34,6 @@ Este documento detalha as Group Policy Objects (GPOs) aplicadas no domínio para
 
 ➡️ **[Conferir secção sobre os Scripts](https://github.com/rodrigolsoares-infra/suporte-infra-hibrida/blob/main/docs/listar-scripts.md)**
  
-👤 **[Ir para o Portfólio do Meu Perfil](https://github.com/rodrigolsoares-infra/rodrigolsoares-infra)**
+👤 **[Ir para o Portfólio do Meu Perfil](https://github.com/rodrigolsoares-infra)**
  
 ---
