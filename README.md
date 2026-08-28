@@ -154,11 +154,15 @@ A estrutura de GPOs foi desenhada para aplicar o princípio de menor privilégio
     └── 📸 ad-ds.png         <-- (Print das evidências)
 ```
 ---
+## 📄 Licença
+
+Este projeto está sob a licença **MIT**. Consulte o arquivo [`LICENSE`](./LICENSE) para obter mais detalhes.
+---
 ## 👤 Autor
 **Rodrigo Luiz Soares**
 * **LinkedIn:** [linkedin.com/in/rodrigolzsoares](https://linkedin.com)
 * **Certificações Concluídas/Em Andamento:** Google IT Support | AZ-900 Microsoft Azure Fundamentals | Em preparação Comptia Network+
----
+
 ---
 ⚠️ **NAVEGAÇÃO:**
 
