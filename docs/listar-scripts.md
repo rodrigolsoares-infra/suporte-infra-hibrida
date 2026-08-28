@@ -7,13 +7,13 @@ Este documento reúne os scripts desenvolvidos no laboratório para automação 
 ### 1. Provisionamento de Usuários em Massa (`ProvisionaUsuarios.ps1`)
 
 * **Objetivo:** Para eliminar tarefas manuais e padronizar a administração do ambiente, foram desenvolvidos scripts automatizados para gerenciamento de usuários e grupos.
-* **Arquivo do Script:** [`../scripts/ProvisionaUsuarios.ps1`](../scripts/ProvisionaUsuarios.ps1) 
+* **Arquivo do Script:** [`../scripts/ProvisionaUsuarios.ps1`](./scripts/ProvisionaUsuarios.ps1) 
 ```powershell
 
 
 ```
 
-* **Base de Dados:** [`scripts/usuarios.csv
+* **Base de Dados:** [`scripts/usuarios.csv`](./Scripts/usuarios)
 ```csv
 
 
