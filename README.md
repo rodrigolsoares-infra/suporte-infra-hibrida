@@ -166,6 +166,6 @@ A estrutura de GPOs foi desenhada para aplicar o princípio de menor privilégio
 
 ➡️ **[Conferir secção sobre as GPOs](./docs/listar-gpos.md)**
  
-👤 **[Ir para o Portfólio do Meu Perfil](https://www.linkedin.com/in/rodrigolzsoares)**
+👤 **[Ir para o Portfólio do Meu Perfil](https://github.com/rodrigolsoares-infra)**
 
 ---
