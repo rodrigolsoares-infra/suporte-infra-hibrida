@@ -34,11 +34,11 @@ Este documento reúne os scripts desenvolvidos no laboratório para automação 
 ---
 ⚠️ **NAVEGAÇÃO:**
 
-↩️ **[Retornar ao Projeto](./docs/listar-gpos.md)**
+↩️ **[Retornar ao Projeto](https://github.com/rodrigolsoares-infra/suporte-infra-hibrida/tree/main)**
 
-➡️ **[Conferir secção sobre as GPOs](./docs/listar-gpos.md)**
+➡️ **[Conferir secção sobre as GPOs](https://github.com/rodrigolsoares-infra/suporte-infra-hibrida/blob/main/docs/listar-gpos.md)**
  
-👤 **[Ir para o Portfólio do Meu Perfil](./docs/listar-gpos.md)**
+👤 **[Ir para o Portfólio do Meu Perfil]([./docs/listar-gpos.md](https://www.linkedin.com/in/rodrigolzsoares))**
 
 ---
 
