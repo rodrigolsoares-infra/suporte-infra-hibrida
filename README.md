@@ -78,7 +78,7 @@ Subnet: 192.168.1.0/24                               Tenant: techcorp.onmicrosof
 +-------------------------------------+
 ```
 
-![Topologia da Arquitetura Híbrida](./docs/topologia-arquitetura.png)
+<!-- ![Topologia da Arquitetura Híbrida](./docs/topologia-arquitetura.png) -->
 
 ---
 ## 3. Automação com Scripts:
