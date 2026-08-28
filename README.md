@@ -141,6 +141,7 @@ A estrutura de GPOs foi desenhada para aplicar o princípio de menor privilégio
 
 ---
 ## Planejamento do Projeto:
+```plaintext
 📁 projeto-gestao-identidades-hibrida/
 ├── 📄 README.md.            <-- (Projeto completo)
 ├── 📁 scripts/
@@ -151,7 +152,7 @@ A estrutura de GPOs foi desenhada para aplicar o princípio de menor privilégio
 │    └──📄 listar-gpos.md    <-- (GPOs em detalhes)
 └── 📁 assets/
     └── 📸 ad-ds.png         <-- (Print das evidências)
-
+```
 ---
 ## 👤 Autor
 **Rodrigo Luiz Soares**
