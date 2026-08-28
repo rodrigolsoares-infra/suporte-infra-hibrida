@@ -30,10 +30,10 @@ Este documento detalha as Group Policy Objects (GPOs) aplicadas no domínio para
 ---
 # ⬇️ **NAVEGAÇÃO:**
 
-↩️ **[Retornar ao Projeto](./docs/listar-gpos.md)**
+↩️ **[Retornar ao Projeto](./README.md)**
 
-➡️ **[Conferir secção sobre os Scripts](./docs/listar-gpos.md)**
+➡️ **[Conferir secção sobre os Scripts](./docs/listar-sripts.md)**
  
-👤 **[Ir para o Portfólio do Meu Perfil](./docs/listar-gpos.md)**
+👤 **[Ir para o Portfólio do Meu Perfil](https://github.com/rodrigolsoares-infra/portfolio-suporte-ti)**
  
 ---
