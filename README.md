@@ -94,7 +94,7 @@ Subnet: 192.168.1.0/24                               Tenant: techcorp.onmicrosof
 <!-- ![Topologia da Arquitetura Híbrida](./docs/topologia-arquitetura.png) -->
 
 ---
-## 3. Automação com Scripts:
+## 3. Automação com Scripts: <a id="scripts"></a>
 #### *Lista de Scripts validados em aplicação:
 
 1. Provisionamento massivo de usuários (PowerShell):*
@@ -106,7 +106,7 @@ Subnet: 192.168.1.0/24                               Tenant: techcorp.onmicrosof
 
 ---
 
-## 4. Políticas de Grupo e Segurança (GPOs)
+## 4. Políticas de Grupo e Segurança (GPOs) <a id="gpos"></a>
 
 A estrutura de GPOs foi desenhada para aplicar o princípio de menor privilégio e garantir o endurecimento (*hardening*) das estações de trabalho.
 #### *Lista de GPOs validados em aplicação:*
