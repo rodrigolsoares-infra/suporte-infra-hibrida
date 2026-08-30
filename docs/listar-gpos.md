@@ -30,7 +30,7 @@ Este documento detalha as Group Policy Objects (GPOs) aplicadas no domínio para
 ---
 # ⬇️ **NAVEGAÇÃO:**
 
-↩️ **[Retornar ao Projeto](https://github.com/rodrigolsoares-infra/suporte-infra-hibrida)**
+↩️ **[Retornar ao Projeto](../readme.md#gpos)**
 
 ➡️ **[Conferir secção sobre os Scripts](https://github.com/rodrigolsoares-infra/suporte-infra-hibrida/blob/main/docs/listar-scripts.md)**
  
