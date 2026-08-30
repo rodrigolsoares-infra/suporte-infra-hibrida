@@ -39,7 +39,7 @@ Abaixo estão os parâmetros essenciais definidos na infraestrutura local e em n
 
 <Details>
 <p align="center">
-  <img src=".github/assets/01-dhcp-scope-active.png" alt="01-dhcp-scope-active.png" width="400"><br>
+  <img src="./assets/01-dhcp-scope-active.png" alt="01-dhcp-scope-active.png" width="400"><br>
   <i>📷 Evidência 1: Configuração do escopo do DHCP ativo.</i><br>
 </p>
 <p align="center">
