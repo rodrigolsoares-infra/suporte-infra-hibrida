@@ -43,11 +43,11 @@ Abaixo estão os parâmetros essenciais definidos na infraestrutura local e em n
   <i>📷 Evidência 1: Configuração do escopo do DHCP ativo.</i><br>
 </p>
 <p align="center">
-  <img src=".github/assets/02-dhcp-concessoes.png" alt="02-dhcp-concessoes.png" width="400"><br>
+  <img src="./assets/02-dhcp-concessoes.png" alt="02-dhcp-concessoes.png" width="400"><br>
   <i>📷 Evidência 2: Concessão do IP ao Cliente CLI-TI-01 cedida pelo DHCP.</i><br>
 </p>
 <p align="center">
-  <img src=".github/assets/03-cliente-ip-dhcp.png" alt="03-cliente-ip-dhcp.png" width="400"><br>
+  <img src="./assets/03-cliente-ip-dhcp.png" alt="03-cliente-ip-dhcp.png" width="400"><br>
   <i>Evidência 3: Configurações de rede com IP atribuido pelo DHCP validado na maquina CLI-TI-01.</i>
 </p>
 </Details>
@@ -168,15 +168,15 @@ techcorp.local/
 <Details>
 📷 Evidência: (Insira um print do painel com as unidades organizacionais e grupos).
 <p align="center">
-  <img src=".github/assets/04-agdlp-groups-members.png" alt="04-agdlp-groups-members" width="300"><br>
+  <img src="./assets/04-agdlp-groups-members.png" alt="04-agdlp-groups-members" width="300"><br>
   <i>📷 Evidência 4: DL_PastaTI_RW vinculada ao Grupo Global GRP_TI_ADM.</i>
 </p>
 <p align="center">
-  <img src=".github/assets/05-ntfs-permissions-ti.png" alt="05-ntfs-permissions-ti" width="300"><br>
+  <img src="./assets/05-ntfs-permissions-ti.png" alt="05-ntfs-permissions-ti" width="300"><br>
   <i>📷 Evidência 5: Configuração de segurança do diretório C:\Empresa\TI compartilhados.</i>
 </p>
 <p align="center">
-  <img src=".github/assets/06-acesso-negado-cliente.png" alt="06-acesso-negado-cliente" width="300"><br>
+  <img src="./assets/06-acesso-negado-cliente.png" alt="06-acesso-negado-cliente" width="300"><br>
   <i>📷 Evidência 6: Acesso negado ao Cliente ao tentar acessar a Pasta Fianceiro sem permissões.</i>
 </p>
 </Details>
@@ -194,7 +194,7 @@ techcorp.local/
 <Details>
 📷 Evidência: (Print do portal do Entra ID mostrando os usuários sincronizados).
 <p align="center">
-  <img src=".github/assets/01-hyperv-vswitch.png" alt="vSwitch Criado no Hyper-V" width="700"><br>
+  <img src="./assets/01-hyperv-vswitch.png" alt="vSwitch Criado no Hyper-V" width="700"><br>
   <i>Figura : Configuração da rede virtual no Hyper-V.</i>
 </p>
 </Details>
