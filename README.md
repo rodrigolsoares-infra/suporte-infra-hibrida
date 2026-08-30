@@ -177,7 +177,7 @@ techcorp.local/
 <Details>
 <p align="center">
   <img src="./assets/04-agdlp-groups-members.png" alt="04-agdlp-groups-members" width="300"><br>
-  <i>📷 Evidência 4: DL_PastaTI_RW vinculada ao Grupo Global GRP_TI_ADM.</i>
+  <i>📷 Evidência 4: DL_PastaTI_RW vinculada ao Grupo Global GG_TI_ADM.</i>
 </p>
 <p align="center">
   <img src="./assets/05-ntfs-permissions-ti.png" alt="05-ntfs-permissions-ti" width="300"><br>
@@ -185,7 +185,7 @@ techcorp.local/
 </p>
 <p align="center">
   <img src="./assets/06-acesso-negado-cliente.png" alt="06-acesso-negado-cliente" width="300"><br>
-  <i>📷 Evidência 6: Acesso negado ao Cliente ao tentar acessar a Pasta Fianceiro sem permissões.</i>
+  <i>📷 Evidência 6: Acesso negado ao Cliente ao tentar acessar a Pasta Financeiro sem permissões.</i>
 </p>
 </Details>
 
