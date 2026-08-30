@@ -37,6 +37,7 @@ Abaixo estão os parâmetros essenciais definidos na infraestrutura local e em n
 | **Opção Escopo `003 Router`**| `192.168.10.1` |
 | **Opção Escopo `006 DNS Servers`**| `192.168.10.10`|
 
+📷 Verifique as Evidências abaixo:
 <Details>
 <p align="center">
   <img src="./assets/01-dhcp-scope-active.png" alt="01-dhcp-scope-active.png" width="400"><br>
@@ -48,7 +49,7 @@ Abaixo estão os parâmetros essenciais definidos na infraestrutura local e em n
 </p>
 <p align="center">
   <img src="./assets/03-cliente-ip-dhcp.png" alt="03-cliente-ip-dhcp.png" width="400"><br>
-  <i>Evidência 3: Configurações de rede com IP atribuido pelo DHCP validado na maquina CLI-TI-01.</i>
+  <i>📷 Evidência 3: Configurações de rede com IP atribuido pelo DHCP validado na maquina CLI-TI-01.</i>
 </p>
 </Details>
 
@@ -94,7 +95,6 @@ Subnet: 192.168.1.0/24                               Tenant: techcorp.onmicrosof
 <!-- ![Topologia da Arquitetura Híbrida](./docs/topologia-arquitetura.png) -->
 
 ---
-## Scripts
 ## 3. Automação com Scripts: 
 #### *Lista de Scripts validados em aplicação:
 
@@ -125,7 +125,16 @@ A estrutura de GPOs foi desenhada para aplicar o princípio de menor privilégio
 * *Ação:* Mapeamento dinâmico da unidade de rede S: apontando para o diretório específico do departamento do usuário logado. 
 
 👉 **[Consulte a Lista Completa de GPOs e Diretivas Aplicadas](./docs/listar-gpos.md)**
-
+<!--
+📷 Verifique as Evidências abaixo:
+<Details>
+📷 Evidência: (Print do portal do Entra ID mostrando os usuários sincronizados).
+<p align="center">
+  <img src="./assets/01-hyperv-vswitch.png" alt="vSwitch Criado no Hyper-V" width="700"><br>
+  <i>Figura : Configuração da rede virtual no Hyper-V.</i>
+</p>
+</Details>
+-->
 ---
 ## 5. Conceitos de Segurança Realistas Aplicados
 
@@ -164,9 +173,8 @@ techcorp.local/
 
 *  *File Server & Compartilhamento de Arquivos:* Criação de diretórios compartilhados `C:\Empresa` com as subpastas para TI, RH, Financeiro e Vendas e configurado para as permissões NTFS com AGDL. 
 
-
+📷 Verifique as Evidências abaixo:
 <Details>
-📷 Evidência: (Insira um print do painel com as unidades organizacionais e grupos).
 <p align="center">
   <img src="./assets/04-agdlp-groups-members.png" alt="04-agdlp-groups-members" width="300"><br>
   <i>📷 Evidência 4: DL_PastaTI_RW vinculada ao Grupo Global GRP_TI_ADM.</i>
@@ -190,7 +198,8 @@ techcorp.local/
 3. Validação dos Resultados:
 * Local: Contas provisionadas via PowerShell verificadas no Active Directory local.
 * Nuvem: Confirmação no Portal do Microsoft Entra ID com atributo `Directory synced: Yes` ativo.
-
+<!--
+📷 Verifique as Evidências abaixo:
 <Details>
 📷 Evidência: (Print do portal do Entra ID mostrando os usuários sincronizados).
 <p align="center">
@@ -198,7 +207,7 @@ techcorp.local/
   <i>Figura : Configuração da rede virtual no Hyper-V.</i>
 </p>
 </Details>
-
+-->
 ---
 ## Planejamento do Projeto:
 ```plaintext
