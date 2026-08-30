@@ -34,7 +34,7 @@ Este documento reúne os scripts desenvolvidos no laboratório para automação 
 ---
 ⚠️ **NAVEGAÇÃO:**
 
-↩️ **[Retornar ao Projeto](https://github.com/rodrigolsoares-infra/suporte-infra-hibrida/tree/main)**
+↩️ **[Retornar ao Projeto](https://github.com/rodrigolsoares-infra/suporte-infra-hibrida/tree/main#scripts)**
 
 ➡️ **[Conferir secção sobre as GPOs](https://github.com/rodrigolsoares-infra/suporte-infra-hibrida/blob/main/docs/listar-gpos.md)**
  
