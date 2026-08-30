@@ -32,7 +32,7 @@ Abaixo estão os parâmetros essenciais definidos na infraestrutura local e em n
 | **NetBIOS** | `TECHCORP` |
 | **Sistema Operacional DC** | Windows Server 2022 Standard |
 | **Serviços Ativos** | AD DS, DNS Server, DHCP Server |
-| **Endereçamento IP (DC)** | `192.168.1.10/24` (Estático) |
+| **Endereçamento IP (DC)** | `192.168.10.10/24` (Estático) |
 | **Escopo_LAN_Corporativa**| `192.168.10.50`–`.200`(`/24`) (DHCP)|
 | **Opção Escopo `003 Router`**| `192.168.10.1` |
 | **Opção Escopo `006 DNS Servers`**| `192.168.10.10`|
