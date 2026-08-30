@@ -66,11 +66,11 @@ Abaixo estão os parâmetros essenciais definidos na infraestrutura local e em n
 ## 2. Topologia e Arquitetura do Ambiente
 ```plaintext
 [ ON-PREMISES INFRASTRUCTURE ]                       [ MICROSOFT CLOUD SERVICES ]
-Subnet: 192.168.1.0/24                               Tenant: techcorp.onmicrosoft.com
+Subnet: 192.168.10.0/24                               Tenant: techcorp.onmicrosoft.com
 +-------------------------------------+             +---------------------------------+
 |  Windows Server 2022 (Domain Ctrl)  |             |       Microsoft Entra ID        |
 |  Hostname: DC01                     |             |       (Cloud Identity)          |
-|  IP: 192.168.1.10                   |             |       Domain: techcorp.com      |
+|  IP: 192.168.10.10                   |             |       Domain: techcorp.com      |
 |  Roles: AD DS, DNS, DHCP            |             +---------------------------------+
 +-------------------------------------+                              ^
                    |                                                 |
@@ -86,7 +86,7 @@ Subnet: 192.168.1.0/24                               Tenant: techcorp.onmicrosof
 +-------------------------------------+
 |  Windows 11 Client (Workstation)    |
 |  Hostname: CLI-TI-01                    |
-|  IP: 192.168.1.50 (DHCP)            |
+|  IP: 192.168.10.50 (DHCP)            |
 |  OU: OU=TI,OU=Empresa_TECHCORP      |
 |  User: `rodrigo.soares@techcorp.com`|
 +-------------------------------------+
