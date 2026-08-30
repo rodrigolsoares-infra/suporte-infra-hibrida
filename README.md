@@ -230,7 +230,7 @@ Este projeto está sob a licença **MIT**. Consulte o arquivo [`LICENSE`](./LICE
 ## 👤 Autor
 **Rodrigo Luiz Soares**
 * **LinkedIn:** [linkedin.com/in/rodrigolzsoares](https://linkedin.com)
-* **Certificações Concluídas/Em Andamento:** Google IT Support | AZ-900 Microsoft Azure Fundamentals | Em preparação Comptia Network+
+* **Certificações Concluídas/Em Andamento:** Google IT Support | AZ-900 Microsoft Azure Fundamentals | Em preparação CCST Networking & Cibersecurity
 
 ---
 ⚠️ **NAVEGAÇÃO:**
