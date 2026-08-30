@@ -34,7 +34,7 @@ Este documento reúne os scripts desenvolvidos no laboratório para automação 
 ---
 ⚠️ **NAVEGAÇÃO:**
 
-↩️ **[Retornar ao Projeto](../readme.md#scripts)**
+↩️ **[Retornar ao Projeto](https://github.com/rodrigolsoares-infra/suporte-infra-hibrida/blob/main/README.md#3-automa%C3%A7%C3%A3o-com-scripts)**
 
 ➡️ **[Conferir secção sobre as GPOs](https://github.com/rodrigolsoares-infra/suporte-infra-hibrida/blob/main/docs/listar-gpos.md)**
  
