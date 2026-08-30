@@ -1,4 +1,4 @@
-# 🚀 Projeto: Gestão Híbrida de Identidades com AD DS, PowerShell e Microsoft Entra ID
+8# 🚀 Projeto: Gestão Híbrida de Identidades com AD DS, PowerShell e Microsoft Entra ID
 
 > **Escopo do Projeto:** Laboratório focado em automação de identidades via PowerShell, aplicação de políticas de segurança por GPO, delegação de privilégios e sincronização de identidade híbrida com Microsoft Entra ID.
 
@@ -225,7 +225,7 @@ Este projeto está sob a licença **MIT**. Consulte o arquivo [`LICENSE`](./LICE
 ---
 ⚠️ **NAVEGAÇÃO:**
 
-➡️ **[Conferir secção sobre as GPOs](./docs/listar-gpos.md)**
+➡️ **[Conferir secção sobre os Scripts](./docs/listar-scripts.md)**
 
 ➡️ **[Conferir secção sobre as GPOs](./docs/listar-gpos.md)**
  
