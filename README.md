@@ -1,4 +1,4 @@
-8# 🚀 Projeto: Gestão Híbrida de Identidades com AD DS, PowerShell e Microsoft Entra ID
+# 🚀 Projeto: Gestão Híbrida de Identidades com AD DS, PowerShell e Microsoft Entra ID
 
 > **Escopo do Projeto:** Laboratório focado em automação de identidades via PowerShell, aplicação de políticas de segurança por GPO, delegação de privilégios e sincronização de identidade híbrida com Microsoft Entra ID.
 
@@ -94,7 +94,8 @@ Subnet: 192.168.1.0/24                               Tenant: techcorp.onmicrosof
 <!-- ![Topologia da Arquitetura Híbrida](./docs/topologia-arquitetura.png) -->
 
 ---
-## 3. Automação com Scripts: <a id="scripts"></a>
+#Scripts
+## 3. Automação com Scripts: 
 #### *Lista de Scripts validados em aplicação:
 
 1. Provisionamento massivo de usuários (PowerShell):*
@@ -106,7 +107,7 @@ Subnet: 192.168.1.0/24                               Tenant: techcorp.onmicrosof
 
 ---
 
-## 4. Políticas de Grupo e Segurança (GPOs) <a id="gpos"></a>
+## 4. Políticas de Grupo e Segurança (#GPOs)
 
 A estrutura de GPOs foi desenhada para aplicar o princípio de menor privilégio e garantir o endurecimento (*hardening*) das estações de trabalho.
 #### *Lista de GPOs validados em aplicação:*
