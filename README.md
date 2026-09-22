@@ -1,6 +1,14 @@
-# 🚀 Projeto: Gestão Híbrida de Identidades com AD DS, PowerShell e Microsoft Entra ID
+# 🏢 Projeto: Implementação de Infraestrutura Corporativa Híbrida (AD DS + Entra ID)
 
-> **Escopo do Projeto:** Laboratório focado em automação de identidades via PowerShell, aplicação de políticas de segurança por GPO, delegação de privilégios e sincronização de identidade híbrida com Microsoft Entra ID.
+> **Escopo do Projeto:** Projeto prático de implementação de uma infraestrutura de TI corporativa end-to-end para a empresa fictícia **TechCorp**, abrangendo desde o provisionamento local via Active Directory Domain Services (AD DS) até o gerenciamento híbrido de identidades na nuvem via Microsoft Entra ID. Com foco em automação de identidades via PowerShell, aplicação de políticas de segurança por GPO e delegação de privilégios.
+
+## 🛠️ Tecnologias e Ferramentas Utilizadas
+
+* **Sistemas Operacionais:** Windows Server 2022 e Windows 11 Enterprise.
+* **Virtualização:** Microsoft Hyper-V.
+* **Serviços de Rede & Identidade:** AD DS, DNS, DHCP, GPO, File Server (NTFS/AGDLP), ABE.
+* **Nuvem & Híbrido:** Microsoft Entra ID (Azure AD), Microsoft Entra Connect Sync, SSPR (Self-Service Password Reset), Password Writeback, MFA.
+* **Automação:** PowerShell.
 
 ## 🎓 Fundamentação Teórica & Competências Exercitadas
 
@@ -22,6 +30,34 @@ Este laboratório foi projetado para aplicar na prática os conceitos teóricos 
   * Automação de tarefas administrativas e manipulação de objetos em massa via **PowerShell**.
   
 ---
+## 📐 Arquitetura da Solução
+
+```text
+               +-------------------------------------------------+
+               |             MICROSOFT ENTRA ID                  |
+               |       (Identidade Híbrida / Cloud)              |
+               +-------------------------------------------------+
+                                        ^
+                                        | (Sincronização Híbrida & Password Writeback)
+                                        v
+               +-------------------------------------------------+
+               |            SERVER DC01 (Windows Server)          |
+               |  - AD DS (techcorp.local / UPN @techcorp.com)   |
+               |  - DNS Server / DHCP Server / File Server       |
+               |  - Entra Connect Sync / GPO Management          |
+               +-------------------------------------------------+
+                                        |
+                         +--------------+--------------+
+                         |                             |
+                         v                             v
+             +-----------------------+     +-----------------------+
+             |        CLI-01         |     |      ESTRUTURA DE     |
+             |      (Windows 11)     |     |   COMPARTILHAMENTO    |
+             |   Ingressado no AD    |     |   C:\Empresa$ (AGDLP) |
+             +-----------------------+     +-----------------------+
+```
+---
+
 ## 1. Configurações Base do Ambiente
 Abaixo estão os parâmetros essenciais definidos na infraestrutura local e em nuvem para sustentar o ambiente híbrido de identidades.
 ### 1.1. Active Directory Domain Services (AD DS - Local)
